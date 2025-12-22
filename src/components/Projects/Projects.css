@@ -1,0 +1,66 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    padding: 32px;
+    margin-bottom: 48px;
+    border-radius: 16px;
+}
+
+.project-title {
+    font-family: "Space Mono", monospace;
+    font-size: 32px;
+}
+
+.tech-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.tech-card {
+    font-family: "Space Mono", monospace;
+    background-color: #394048 !important;
+    font-size: 16px;
+}
+
+.actions-container {
+    display: flex;
+    gap: 8px;
+}
+
+.project-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: "Space Mono", monospace;
+    background-color: rgba(255,255,255,.85);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 12px 16px;
+}
+
+.project-button:hover {
+    background-color: white !important;
+}
+
+@media (max-width: 991px) {
+    .project-card {
+        padding: 24px;
+        margin-bottom: 32px;
+        border-radius: 16px;
+    }
+
+    .project-title {
+        font-size: 24px;
+    }
+
+    .tech-card {
+        font-size: 14px;
+    }
+
+    .project-button {
+        font-size: 14px;
+        padding: 12px 12px;
+    };
+}

@@ -1,0 +1,82 @@
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh !important;
+}
+
+.name {
+    font-family: "Space Mono", monospace;
+    font-size: 64px;
+    word-wrap: wrap;
+    padding-bottom: 16px;
+}
+
+.title {
+    font-size: 24px;
+    font-family: "Space Mono", monospace;
+}
+
+.typed-cursor {
+    color: #4286f4;
+}
+
+.splash-link {
+    color: white;
+    font-size: 32px;
+    padding: 12px 20px;
+    border: 1px solid white;
+}
+
+.splash-link:hover {
+    background-color: white;
+    color: var(--bg-color);
+}
+
+.link-github {
+    background-color: var(--bg-color);
+    border-left: none;
+    border-right: none;
+}
+
+.link-linkedin {
+    background-color: #0073b1;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.link-linkedin:hover {
+    color: #0073b1 !important;
+}
+
+.link-mail {
+    background-color: #eb4034;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.link-mail:hover {
+    color: #eb4034 !important;
+}
+
+.link-hover-label {
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    height: 16px;
+}
+
+@media (max-width: 991px) {
+    .name {
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .link-hover-label {
+        display: none;
+    }
+}

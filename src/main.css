@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #121212;
+  --accent-color: #1E1E1E;
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.scaled-py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.scaled-my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+@media (max-width: 991px) {
+    .scaled-py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+    .scaled-my-5 {
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+}

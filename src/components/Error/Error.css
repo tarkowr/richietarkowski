@@ -1,0 +1,17 @@
+.home-button {
+    background-color: var(--bg-color);
+    border: 1px solid white;
+    padding: 12px 24px;
+}
+
+a {
+    color: white;
+}
+
+.home-button:hover {
+    background-color: white;
+}
+
+.home-button:hover a {
+    color: var(--bg-color);
+}
