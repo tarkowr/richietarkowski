@@ -22,6 +22,10 @@
     padding: 0 1rem;
 }
 
+.divider {
+    color: gray;
+}
+
 .links {
     padding-top: 5rem;
 }
