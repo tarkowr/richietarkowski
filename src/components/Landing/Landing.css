@@ -4,28 +4,32 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh !important;
+    width: 100%;
+    text-align: center;
+    color: white;
 }
 
 .name {
-    font-family: "Space Mono", monospace;
     font-size: 64px;
     word-wrap: wrap;
-    padding-bottom: 16px;
+    padding-bottom: 1rem;
 }
 
 .title {
-    font-size: 24px;
-    font-family: "Space Mono", monospace;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
-.typed-cursor {
-    color: #4286f4;
+.links {
+    padding-top: 5rem;
 }
 
 .splash-link {
     color: white;
     font-size: 32px;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     border: 1px solid white;
 }
 
@@ -62,8 +66,8 @@
 
 .link-hover-label {
     font-size: 16px;
-    font-family: "Space Mono", monospace;
     height: 16px;
+    padding-top: 1rem;
 }
 
 @media (max-width: 991px) {
@@ -73,7 +77,9 @@
     }
 
     .title {
-        font-size: 18px;
+        font-size: 14px;
+        gap: 0.5rem;
+        padding: 0 0.5rem;
     }
 
     .link-hover-label {
