@@ -1,5 +1,7 @@
 import { useState, ReactNode } from 'react';
 
+import { VersifySvg } from '../../svg/versify';
+
 import './Landing.css';
 
 export const Landing = () => {
@@ -21,15 +23,38 @@ export const Landing = () => {
           <span>Follower of Christ</span>
         </div>
         <div className='links'>
-          <LinkCard className='link-linkedin' link='https://www.linkedin.com/in/richie-tarkowski-273238155'
-            icon={<i className='fa fa-linkedin'> </i>} onMouseOver={() => setLinkLabel('LINKEDIN')} onMouseOut={resetLinkLabel} />
-          <LinkCard className='link-github' link='https://github.com/tarkowr'
-            icon={<i className='fa fa-github'> </i>} onMouseOver={() => setLinkLabel('GITHUB')} onMouseOut={resetLinkLabel} />
-          <LinkCard className='link-mail' link='mailto:tarkowr@gmail.com'
-            icon={<i className='fa fa-envelope-o'> </i>} onMouseOver={() => setLinkLabel('EMAIL')} onMouseOut={resetLinkLabel} />
-          <div className='link-hover-label'>{linkLabel}</div>
+          <LinkCard
+            className='link-linkedin'
+            link='https://www.linkedin.com/in/richie-tarkowski-273238155'
+            icon={<i className='fa fa-linkedin'> </i>}
+            onMouseOver={() => setLinkLabel('LINKEDIN')}
+            onMouseOut={resetLinkLabel}
+          />
+          <LinkCard
+            className='link-github'
+            link='https://github.com/tarkowr'
+            icon={<i className='fa fa-github'> </i>}
+            onMouseOver={() => setLinkLabel('GITHUB')}
+            onMouseOut={resetLinkLabel}
+          />
+          <LinkCard
+            className='link-versify'
+            link='https://getversify.web.app'
+            icon={<VersifySvg />}
+            onMouseOver={() => setLinkLabel('VERSIFY')}
+            onMouseOut={resetLinkLabel}
+          />
+          <LinkCard
+            className='link-mail'
+            link='mailto:tarkowr@gmail.com'
+            icon={<i className='fa fa-envelope-o'> </i>}
+            onMouseOver={() => setLinkLabel('EMAIL')}
+            onMouseOut={resetLinkLabel}
+          />
         </div>
+        <div className='link-hover-label'>{linkLabel}</div>
       </div>
+      <a className='cake-link' href='https://cake-it-off.web.app/' target='_blank'>🎂</a>
     </div>
   );
 }
