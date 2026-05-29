@@ -7,8 +7,9 @@
     text-align: center;
 }
 
-.wrapper {
+main {
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .name {
@@ -40,19 +41,14 @@
 
     display: flex;
     padding: 1rem 1.25rem;
-    font-size: 2rem;
-    color: var(--text-color);
+    color: white;
     background-color: var(--link-bg);
-    border: 1px solid var(--text-color);
+    border: 1px solid white;
     transition: background-color var(--transition), color var(--transition);
 }
 
-.splash-link>i {
-    width: 32px;
-}
-
 .splash-link:hover {
-    background-color: var(--text-color);
+    background-color: white;
     color: var(--link-hover-color);
 }
 
@@ -67,6 +63,10 @@
 .link-github {
     border-left: none;
     border-right: none;
+}
+
+.link-github>svg {
+    fill: white;
 }
 
 .link-versify {

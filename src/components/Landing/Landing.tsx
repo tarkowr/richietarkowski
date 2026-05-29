@@ -1,6 +1,6 @@
 import { useState, ReactNode } from 'react';
 
-import { VersifySvg } from '../../svg/versify';
+import { EmailSvg, GithubSvg, LinkedinSvg, VersifySvg } from '../../svg';
 
 import './Landing.css';
 
@@ -13,7 +13,7 @@ export const Landing = () => {
 
   return (
     <div className='landing'>
-      <div className='wrapper'>
+      <main>
         <div className='name'>Richie Tarkowski</div>
         <div className='title'>
           <span>Software engineer</span>
@@ -26,14 +26,14 @@ export const Landing = () => {
           <LinkCard
             className='link-linkedin'
             link='https://www.linkedin.com/in/richie-tarkowski-273238155'
-            icon={<i className='fa fa-linkedin'> </i>}
+            icon={<LinkedinSvg />}
             onMouseOver={() => setLinkLabel('LINKEDIN')}
             onMouseOut={resetLinkLabel}
           />
           <LinkCard
             className='link-github'
             link='https://github.com/tarkowr'
-            icon={<i className='fa fa-github'> </i>}
+            icon={<GithubSvg />}
             onMouseOver={() => setLinkLabel('GITHUB')}
             onMouseOut={resetLinkLabel}
           />
@@ -47,13 +47,13 @@ export const Landing = () => {
           <LinkCard
             className='link-mail'
             link='mailto:tarkowr@gmail.com'
-            icon={<i className='fa fa-envelope-o'> </i>}
+            icon={<EmailSvg />}
             onMouseOver={() => setLinkLabel('EMAIL')}
             onMouseOut={resetLinkLabel}
           />
         </div>
         <div className='link-hover-label'>{linkLabel}</div>
-      </div>
+      </main>
       <a className='cake-link' href='https://cake-it-off.web.app/' target='_blank'>🎂</a>
     </div>
   );

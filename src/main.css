@@ -1,7 +1,6 @@
 :root {
     --bg-color: #121212;
     --accent-color: #1e1e1e;
-    --text-color: #ffffff;
     --muted-color: #808080;
 
     --color-linkedin: #0073b1;
@@ -29,7 +28,7 @@ body {
     font-family: var(--font-family);
     font-weight: 300;
     background-color: var(--bg-color);
-    color: var(--text-color);
+    color: white;
 }
 
 a {
